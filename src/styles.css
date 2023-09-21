@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+    @apply flex w-full justify-between rounded-lg bg-purple-200 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-300 focus-visible:ring-opacity-75
+}
+.answer {
+    @apply px-4 pt-4 pb-2 text-sm text-gray-500
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit ;
+}
+.cotainer.question.title::after {
+    content: + ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    right: 20px;
+    font-size: 25px;
+}
+.cotainer.question.activ. title::after {
+    content: "\2014";
+}
